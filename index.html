@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TUGAS SESI 4</title>
+</head>
+
+<body>
+
+    <div class="flex flex-col m-5 p-3 border">
+        <h1 style="color: black;">TUGAS SESI 4</h1>
+        <p style="color: black;"> 1. Buatlah 10 lampu dengan fungsi yang sama</p>
+        <p>2. Buatlah 4 Grup lampu (Ruangan) dengan detail sebagai berikut:</p>
+        <p>Ruang keluarga : 3 lampu</p>
+        <p>Ruang makan : 1 lampu</p>
+        <p>Ruang tidur : 2 lampu</p>
+        <p>Ruang tamu : 4 lampu</p>
+    </div>
+    <div class="flex flex-col bg-green-200 justify-center items-center m-5 p-5 rounded-full">
+
+        <div class="justify-center items-center flex ">
+            <h1>SAKLAR LAMPU INDIVIDUAL</h1>
+        </div>
+
+        <div class="flex flex-row w-200 h- 30 p-3 justify-center">
+            <!-- 1 -->
+            <label for="default-toggle1"
+                class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+                <input type="checkbox" id="default-toggle1" class="peer sr-only" onchange="saklar()" />
+
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+                </label>
+
+            <!-- 2 -->
+            <label for="default-toggle2"
+                class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+                <input type="checkbox" id="default-toggle2" class="peer sr-only" onchange="saklar()" />
+
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+            </label>
+
+            <!-- 3 -->
+            <label for="default-toggle3"
+                class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+                <input type="checkbox" id="default-toggle3" class="peer sr-only" onchange="saklar()" />
+
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+            </label>
+
+            <!-- 4 -->
+            <label for="default-toggle4"
+                class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+                <input type="checkbox" id="default-toggle4" class="peer sr-only" onchange="saklar()" />
+
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+            </label>
+
+            <!-- 5 -->
+            <label for="default-toggle5"
+                class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+                <input type="checkbox" id="default-toggle5" class="peer sr-only" onchange="saklar()" />
+
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+            </label>
+        </div>
+
+        <div class="flex flex-row w-200 h- 30 p-3 justify-center">
+
+        <!-- 6 -->
+        <label for="default-toggle6"
+            class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+            <input type="checkbox" id="default-toggle6" class="peer sr-only" onchange="saklar()" />
+
+            <span
+                class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+        </label>
+
+        <!-- 7 -->
+        <label for="default-toggle7"
+            class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+            <input type="checkbox" id="default-toggle7" class="peer sr-only" onchange="saklar()" />
+
+            <span
+                class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+        </label>
+
+        <!-- 8 -->
+        <label for="default-toggle8"
+            class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+            <input type="checkbox" id="default-toggle8" class="peer sr-only" onchange="saklar()" />
+            <span
+                class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+        </label>
+
+        <!-- 9 -->
+        <label for="default-toggle9"
+            class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+            <input type="checkbox" id="default-toggle9" class="peer sr-only" onchange="saklar()" />
+            <span
+                class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+        </label>
+
+        <!-- 10 -->
+        <label for="default-toggle10"
+            class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500 m-1">
+            <input type="checkbox" id="default-toggle10" class="peer sr-only" onchange="saklar()" />
+
+            <span
+                class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+        </label>
+    </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 p-5">
+
+        <!-- RUANG KELUARGA -->
+        <div class="flex flex-col bg-green-200 gap-4 items-center w-full p-5 rounded-full">
+
+            <h1 style="color: black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">RUANG
+                KELUARGA</h1>
+
+            <div class="flex flex-row gap-6">
+                <img src="Assets/Images/off.jpg" alt="" id="lampu1" class="w-11 h-15">
+                <img src="Assets/Images/off.jpg" alt="" id="lampu2" class="w-11 h-15">
+                <img src="Assets/Images/off.jpg" alt="" id="lampu3" class="w-11 h-15">
+            </div>
+
+            <label for="default-toggle11"
+                class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500">
+                <input type="checkbox" id="default-toggle11" class="peer sr-only" onchange="ruangan()" />
+
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+            </label>
+
+        </div>
+
+        <!-- RUANG MAKAN -->
+        <div class="flex flex-col bg-yellow-200 gap-4 items-center w-full p-5 rounded-full">
+
+            <h1 style="color: black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">RUANG
+                MAKAN </h1>
+
+            <img src="Assets/Images/off.jpg" alt="" id="lampu4" class="w-11 h-15">
+
+            <label for="default-toggle12"
+                class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500">
+                <input type="checkbox" id="default-toggle12" class="peer sr-only" onchange="ruangan()" />
+
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+            </label>
+
+        </div>
+
+        <!-- RUANG TIDUR -->
+        <div class="flex flex-col bg-blue-200 gap-4 items-center w-full p-5 rounded-full">
+
+            <h1 style="color: black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">RUANG
+                TIDUR </h1>
+
+            <div class="flex flex-row gap-6">
+                <img src="Assets/Images/off.jpg" alt="" id="lampu5" class="w-11 h-15">
+                <img src="Assets/Images/off.jpg" alt="" id="lampu6" class="w-11 h-15">
+            </div>
+
+            <label for="default-toggle13"
+                class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500">
+                <input type="checkbox" id="default-toggle13" class="peer sr-only" onchange="ruangan()" />
+
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+            </label>
+
+        </div>
+
+        <!-- RUANG TAMU -->
+        <div class="flex flex-col bg-red-200 gap-4 items-center w-full p-5 rounded-full">
+
+            <h1 style="color: black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">RUANG TAMU
+            </h1>
+            <div class="flex flex-row gap-6">
+                <img src="Assets/Images/off.jpg" alt="" id="lampu7" class="w-11 h-15">
+                <img src="Assets/Images/off.jpg" alt="" id="lampu8" class="w-11 h-15">
+                <img src="Assets/Images/off.jpg" alt="" id="lampu9" class="w-11 h-15">
+                <img src="Assets/Images/off.jpg" alt="" id="lampu10" class="w-11 h-15">
+            </div>
+
+            <label for="default-toggle14"
+                class="relative inline-block h-5 w-11 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500">
+                <input type="checkbox" id="default-toggle14" class="peer sr-only" onchange="ruangan()" />
+
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-3 rounded-full bg-white transition-all peer-checked:start-6"></span>
+            </label>
+
+        </div>
+    </div>
+
+    <script src="tugas.js" type="application/javascript"></script>
+</body>
+
+</html>
